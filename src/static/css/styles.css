@@ -1,5 +1,5 @@
 body {
-    background-color: #6E2594;
+    background-color: #808080;
     margin-top: 50px;
     font-family: 'Lato';
 }
@@ -35,5 +35,5 @@ body {
 }
 
 button:focus {
-    border: 1px solid #333;
+    border: 1px solid #ECD444;
 }
