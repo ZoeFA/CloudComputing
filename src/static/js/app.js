@@ -98,12 +98,13 @@ function AddItemForm({ onNewItem }) {
                     type="text"
                     placeholder="New Item"
                     aria-describedby="basic-addon1"
+	    	    readOnly={true}
                 />
                 <InputGroup.Append>
                     <Button
                         type="submit"
                         variant="success"
-                        disabled={!newItem.length}
+                        disabled={true}
                         className={submitting ? 'disabled' : ''}
                     >
                         {submitting ? 'Adding...' : 'Add Item'}
@@ -144,6 +145,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                         className="toggles"
                         size="sm"
                         variant="link"
+	    		disabled={true}
                         onClick={toggleCompletion}
                         aria-label={
                             item.completed
@@ -165,6 +167,7 @@ function ItemDisplay({ item, onItemUpdate, onItemRemoval }) {
                     <Button
                         size="sm"
                         variant="link"
+	    		disabled={true}
                         onClick={removeItem}
                         aria-label="Remove Item"
                     >
